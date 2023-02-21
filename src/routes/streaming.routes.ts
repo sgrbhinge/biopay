@@ -7,7 +7,11 @@ router.get("/", (req, res) => {
 })
 
 router.post("/user-registration", (req, res) => {
-  res.json(req.body)
+  let userData = {
+    "data": req.body,
+    "message": "Received user-registration data!"
+  }
+  res.status(200).json(userData)
 })
 
 router.post("/process-uni8list", processUni8list)
