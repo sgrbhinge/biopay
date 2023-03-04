@@ -1,5 +1,4 @@
 import express from "express"
-import stream from "node-rtsp-stream"
 import { middlewares, constants } from "./src/middlewares"
 
 const app = express()
