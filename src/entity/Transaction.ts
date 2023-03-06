@@ -1,40 +1,27 @@
 import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity({ name: "users"})
-export class User {
+@Entity({ name: "transactions" })
+export class Transaction {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({
-    length: 150,
-  })
-  name: string;
-
-  @Column({
-    length: 50,
-  })
-  email: string;
-
-  @Column({
-    length: 15,
-  })
-  contact: string;
-
   @Column()
-  active: boolean;
+  userId: number;
 
   @Column({
-    length: 16,
+    length: 10,
   })
-  username: string;
+  amount: string;
 
-  @Column()
-  pin: number;
+  @Column({
+    length: 10,
+  })
+  currencyType: string;
 
   @Column({
     length: 20,
   })
-  token: string;
+  status: string;
 
   @Column({ type: "timestamp" })
   updatedAt: string;
