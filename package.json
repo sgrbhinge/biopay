@@ -26,13 +26,16 @@
     "express": "^4.18.2",
     "ffmpeg": "^0.0.4",
     "fluent-ffmpeg": "^2.1.2",
+    "mysql": "^2.18.1",
     "node-onvif": "^0.1.7",
     "node-rtsp-stream": "^0.0.9",
     "node-webcam": "^0.8.1",
+    "reflect-metadata": "^0.1.13",
     "request": "^2.88.2",
     "rtsp-streaming-server": "^2.0.6",
     "socket.io": "^4.6.1",
-    "tsc": "^2.0.4"
+    "tsc": "^2.0.4",
+    "typeorm": "^0.3.12"
   },
   "devDependencies": {
     "nodemon": "^2.0.20",
